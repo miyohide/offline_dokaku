@@ -6,4 +6,7 @@
 * 01_poker
   * 第一回 オフラインリアルタイムどう書くの参考問題（ http://qiita.com/items/cbc3af152ee3f50a822f ）を解いてみました
 
+* 02_binary_digit_rotate
+  * 第二回 オフラインリアルタイムどう書くの参考問題 ( http://qiita.com/items/9d80de41903775296ca6 ) を解いてみました
+
 
