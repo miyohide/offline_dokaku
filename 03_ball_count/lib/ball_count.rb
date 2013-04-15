@@ -26,6 +26,10 @@ class BallCount
             if ball_count == 4
                strike_count = ball_count = 0
             end
+         when 'h'
+            strike_count = ball_count = 0
+         when 'f'
+            strike_count += 1 if strike_count < 2
 
          end
          counter_result += "#{out_count}#{strike_count}#{ball_count}"
