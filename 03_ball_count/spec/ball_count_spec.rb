@@ -74,5 +74,29 @@ describe BallCount do
          it { should eq '010,020,100,200,210,220,220,000' }
       end
    end
+   
+   describe 'bbbsfbppp' do
+      let(:input_data) { 'bbbsfbppp' }
+      describe 'counter' do
+         subject { BallCount.new(input_data).counter }
+         it { should eq '001,002,003,013,023,000,100,200,000' }
+      end
+   end
+   
+   describe 'sssbbbbsbhsbppp' do
+      let(:input_data) { 'sssbbbbsbhsbppp' }
+      describe 'counter' do
+         subject { BallCount.new(input_data).counter }
+         it { should eq '010,020,100,101,102,103,100,110,111,100,110,111,200,000,100' }
+      end
+   end
+   
+   describe 'ssffpffssp' do
+      let(:input_data) { 'ssffpffssp' }
+      describe 'counter' do
+         subject { BallCount.new(input_data).counter }
+         it { should eq '010,020,020,020,100,110,120,200,210,000' }
+      end
+   end
 end
 
