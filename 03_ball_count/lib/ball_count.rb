@@ -30,7 +30,10 @@ class BallCount
             strike_count = ball_count = 0
          when 'f'
             strike_count += 1 if strike_count < 2
-
+         when 'p'
+            strike_count = ball_count = 0
+            out_count += 1
+            out_count = 0 if out_count == 3
          end
          counter_result += "#{out_count}#{strike_count}#{ball_count}"
       end

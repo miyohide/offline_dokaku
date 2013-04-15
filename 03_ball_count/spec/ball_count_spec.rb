@@ -42,5 +42,13 @@ describe BallCount do
          it { should eq '000,010,011,000,010,000,001,000' }
       end
    end
+   
+   describe 'psbpfpbp' do
+      let(:input_data) { 'psbpfpbp' }
+      describe 'counter' do
+         subject { BallCount.new(input_data).counter }
+         it { should eq '100,110,111,200,210,000,001,100' }
+      end
+   end
 end
 
