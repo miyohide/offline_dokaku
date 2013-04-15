@@ -9,4 +9,6 @@
 * 02_binary_digit_rotate
   * 第二回 オフラインリアルタイムどう書くの参考問題 ( http://qiita.com/items/9d80de41903775296ca6 ) を解いてみました
 
+* 03_ball_count
+  * 第三回 オフラインリアルタイムどう書くの参考問題 ( http://qiita.com/items/ebd8a56b41711ba459f9 ）を解いてみました
 
