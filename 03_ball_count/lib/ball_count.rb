@@ -21,6 +21,7 @@ class BallCount
                strike_count = ball_count = 0
                out_count += 1
             end
+            out_count = 0 if out_count == 3
          when 'b'
             ball_count += 1
             if ball_count == 4
