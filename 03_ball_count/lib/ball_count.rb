@@ -12,18 +12,23 @@ class BallCount
       ball_count = 0
       out_count = 0
       @ball_string.each_char do |c|
+         counter_result += ',' unless counter_result.empty?
+
          case c
          when 's'
-            counter_result += ',' unless counter_result.empty?
             strike_count += 1
             if strike_count == 3
                strike_count = ball_count = 0
                out_count += 1
             end
-            counter_result += "#{out_count}#{strike_count}#{ball_count}"
          when 'b'
+            ball_count += 1
+            if ball_count == 4
+               strike_count = ball_count = 0
+            end
 
          end
+         counter_result += "#{out_count}#{strike_count}#{ball_count}"
       end
       counter_result
    end
